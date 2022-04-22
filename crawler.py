@@ -21,8 +21,8 @@ PATH = "/Users/enjuichang/chromedriver"
 driver = webdriver.Chrome(PATH)
 
 # Input URL
-URLs = ["https://amae-koromo.sapk.ch/player/73362382/16.12.9.11.8"]
-
+# URLs = ["https://amae-koromo.sapk.ch/player/73362382/16.12.9.11.8"]
+URLs = ["https://amae-koromo.sapk.ch/player/73495327/16"]
 
 # Stroage
 rank_ls = []
@@ -108,4 +108,4 @@ driver.quit()
 
 # Save to CSV
 outputDF = pd.DataFrame({"time": datetime_ls, "rank":rank_ls, "score": score_ls})
-outputDF.to_csv("./dataset.csv")
+outputDF.to_csv("./dataset_2.csv")
